@@ -1,7 +1,4 @@
 node ('built-in') {
-  tools{
-      gradle 'gradle-jenkins'
-  }
 
   stage('SCM') {
     checkout scm
