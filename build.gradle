@@ -62,3 +62,13 @@ task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
 // end::wrapper[]
+plugins {
+  id "org.sonarqube" version "6.2.0.5505"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "sonar-maven"
+    property "sonar.projectName", "sonar-maven"
+  }
+}
