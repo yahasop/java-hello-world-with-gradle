@@ -57,7 +57,7 @@ repositories {
 
 // tag::jar[]
 jar {
-    baseName = 'jb-hello-world'
+    archiveBaseName = 'jb-hello-world'
     version =  '0.1.0'
 }
 // end::jar[]
