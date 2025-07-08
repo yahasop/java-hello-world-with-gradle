@@ -59,7 +59,7 @@ dependencies {
 
 // tag::wrapper[]
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '8.14'
 }
 // end::wrapper[]
 plugins {
