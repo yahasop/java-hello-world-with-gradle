@@ -28,6 +28,18 @@ dependencies {
 }
 */
 
+plugins {
+  id "org.sonarqube" version "6.2.0.5505"
+  id "java"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "sonar-maven"
+    property "sonar.projectName", "sonar-maven"
+  }
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
@@ -62,18 +74,8 @@ task wrapper(type: Wrapper) {
     gradleVersion = '8.14'
 }
 // end::wrapper[]
-plugins {
-  id "org.sonarqube" version "6.2.0.5505"
-  id "java"
-}
 
-sonar {
-  properties {
-    property "sonar.projectKey", "sonar-maven"
-    property "sonar.projectName", "sonar-maven"
-  }
-}
-
+/*
 java {
     // Set your project's compilation target to something compatible
     // If your project only needs Java 17 features, use 17.
@@ -89,3 +91,4 @@ java {
         languageVersion = JavaLanguageVersion.of(17) // or 21
     }
 }
+*/
